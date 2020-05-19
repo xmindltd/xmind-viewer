@@ -1,0 +1,31 @@
+{
+  "name": "xmind-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "XMind Ltd.",
+    "email": "support@xmind.net",
+    "url": "https://www.xmind.net"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.16",
+    "@types/jszip": "^3.1.6",
+    "jszip": "^3.2.2"
+  },
+  "alias": {
+    "common": "./src/common",
+    "model": "./src/model",
+    "utils": "./src/utils",
+    "view": "./src/view",
+    "viewController": "./src/viewController",
+    "structure": "./src/structure"
+  }
+}

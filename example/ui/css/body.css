@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  height: 40px;
+  background-color: #2e2e2e;
+  padding: 0 16px;
+}
+
+#logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 4px 6px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgba(223,223,223,0.2);
+}
+
+button:focus {
+  outline:0;
+}
