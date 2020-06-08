@@ -6,6 +6,21 @@ It's very useful for showing a mind map on any web pages. Like a blog post, a bo
 
 XMind Viewer is an official project, made by XMind team, and written in TypeScript.
 
+## Quick Start
+
+```bash
+git clone https://github.com/xmindltd/xmind-viewer.git
+cd xmind-viewer
+# install project dependencies
+npm install --registry=https://registry.npm.taobao.org
+# install parcel
+npm install -g parcel  --registry=https://registry.npm.taobao.org
+# run
+parcel example\index.html
+# build
+# npm install  cssnano  --registry=https://registry.npm.taobao.org
+# parcel build example\index.html
+```
 
 ## Usage and Getting Started
 
