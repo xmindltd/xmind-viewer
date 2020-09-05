@@ -1,6 +1,6 @@
 import JSZip from 'jszip'
-import { SheetData } from 'model/sheet'
-import { TopicData } from 'model/topic'
+import { SheetData } from './model/sheet'
+import { TopicData } from './model/topic'
 
 const MANIFEST_XML_PATH = 'META-INF/manifest.xml'
 const CONTENT_XML_PATH = 'content.xml'

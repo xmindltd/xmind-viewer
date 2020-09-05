@@ -1,6 +1,6 @@
 import TopicShape from './topicShape'
-import Bounds from 'utils/bounds'
-import { TopicShapeType } from 'common/constants/styles'
+import Bounds from '../../../utils/bounds'
+import { TopicShapeType } from '../../../common/constants/styles'
 
 export default class RoundedRectTopicShape extends TopicShape {
 

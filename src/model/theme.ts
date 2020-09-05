@@ -1,6 +1,6 @@
 import Model, { ModelData } from './model'
 import Style, { StyleData } from './style'
-import { ClassType } from 'common/constants/styles'
+import { ClassType } from '../common/constants/styles'
 
 export interface ThemeData extends ModelData {
 

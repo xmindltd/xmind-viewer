@@ -1,6 +1,6 @@
-import ViewController from 'viewController/viewController'
-import TextView from 'view/textView'
-import FontInfo from 'utils/fontInfo'
+import ViewController from './viewController'
+import TextView from '../view/textView'
+import FontInfo from '../utils/fontInfo'
 
 export default abstract class TextViewController extends ViewController {
 

@@ -1,8 +1,8 @@
 import Model, { ModelData }  from './model'
-import { TopicType } from 'common/constants/models'
-import { ExtensionProvider, ExtensionContentName } from 'common/constants/extensions'
+import { TopicType } from '../common/constants/models'
+import { ExtensionProvider, ExtensionContentName } from '../common/constants/extensions'
 import { StyleData } from './style'
-import { StyleKey } from 'common/constants/styles'
+import { StyleKey } from '../common/constants/styles'
 import Sheet from './sheet'
 
 export interface TopicData extends ModelData {

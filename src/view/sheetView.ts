@@ -1,7 +1,7 @@
 import View from './view'
-import ViewType from 'common/constants/views'
+import ViewType from '../common/constants/views'
 import { G, Svg, SVG } from '@svgdotjs/svg.js'
-import Bounds from 'utils/bounds'
+import Bounds from '../utils/bounds'
 
 export default class SheetView extends View {
 

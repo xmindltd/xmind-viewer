@@ -1,9 +1,8 @@
 import MindMapStyleSelector, { StyleOptions } from './mindMapStyleSelector'
-import View from 'view/view'
-import ViewController from 'viewController/viewController'
-import BranchViewController from 'viewController/branchViewController'
-import { ClassType, StyleKey } from 'common/constants/styles'
-import { isAttachedBranch, getBranchIndex, getParentBranch } from 'utils/branchUtils'
+import ViewController from '../../../viewController/viewController'
+import BranchViewController from '../../../viewController/branchViewController'
+import { ClassType, StyleKey } from '../../../common/constants/styles'
+import { isAttachedBranch, getBranchIndex, getParentBranch } from '../../branchUtils'
 
 export default class TopicStyleSelector extends MindMapStyleSelector {
 

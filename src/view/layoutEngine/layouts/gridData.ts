@@ -1,4 +1,4 @@
-import LayoutData from 'view/layoutEngine/layouts/layoutData'
+import LayoutData from '../../layoutEngine/layouts/layoutData'
 
 export default class GridData extends LayoutData {
 

@@ -1,6 +1,6 @@
-import ViewType from 'common/constants/views'
-import Size from 'utils/size'
-import { isSameSize } from 'utils/bounds'
+import ViewType from '../common/constants/views'
+import Size from '../utils/size'
+import { isSameSize } from '../utils/bounds'
 import { Element } from '@svgdotjs/svg.js'
 
 export default abstract class View {

@@ -1,10 +1,10 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import Bounds from 'utils/bounds'
-import BranchViewController from 'viewController/branchViewController'
-import Size from 'utils/size'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Bounds from '../../../utils/bounds'
+import BranchViewController from '../../../viewController/branchViewController'
+import Size from '../../../utils/size'
 import { getUnits } from './topicShapeUtils'
-import { TOPIC_SHAPE_STACK_GAP } from 'common/constants/layoutSettings'
+import { TOPIC_SHAPE_STACK_GAP } from '../../../common/constants/layoutSettings'
 
 export default class StackTopicShape extends TopicShape {
   

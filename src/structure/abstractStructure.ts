@@ -1,10 +1,10 @@
-import BranchViewController from 'viewController/branchViewController'
-import Bounds, { mergeArray, move } from 'utils/bounds'
-import StructureClass, { EXPOSED_ATTACHED_STRUCTURES } from 'common/constants/structures'
-import { TopicType } from 'common/constants/models'
-import { ConnectionInfo, getConnectionInfo } from 'view/lineRender/topicLineStyle'
-import { BranchConnection } from 'common/constants/styles'
-import { isOrgChartStructure } from 'structure/helper/structureUtils'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds, { mergeArray, move } from '../utils/bounds'
+import StructureClass, { EXPOSED_ATTACHED_STRUCTURES } from '../common/constants/structures'
+import { TopicType } from '../common/constants/models'
+import { ConnectionInfo, getConnectionInfo } from '../view/lineRender/topicLineStyle'
+import { BranchConnection } from '../common/constants/styles'
+import { isOrgChartStructure } from './helper/structureUtils'
 
 export default abstract class AbstractStructure {
 

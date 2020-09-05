@@ -1,11 +1,11 @@
 import UnderlineTopicShape from './underlineTopicShape'
-import BranchViewController from 'viewController/branchViewController'
-import Size from 'utils/size'
+import BranchViewController from '../../../viewController/branchViewController'
+import Size from '../../../utils/size'
 import { getUnits } from './topicShapeUtils'
-import StructureClass from 'common/constants/structures'
-import { getBranchIndex, getParentBranch } from 'utils/branchUtils'
-import { Direction } from 'common/constants/models'
-import { ROTATED_TAN } from 'common/constants/layoutSettings'
+import StructureClass from '../../../common/constants/structures'
+import { getBranchIndex, getParentBranch } from '../../../utils/branchUtils'
+import { Direction } from '../../../common/constants/models'
+import { ROTATED_TAN } from '../../../common/constants/layoutSettings'
 
 export default class FishboneUnderlineTopicShape extends UnderlineTopicShape {
 

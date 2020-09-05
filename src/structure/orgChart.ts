@@ -1,9 +1,9 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import { BranchConnection } from 'common/constants/styles'
-import Size from 'utils/size'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import { BranchConnection } from '../common/constants/styles'
+import Size from '../utils/size'
 
 export default abstract class OrgChart extends AbstractStructure {
 

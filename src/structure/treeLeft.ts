@@ -1,5 +1,5 @@
 import TreeLeftAndRight from './treeLeftAndRight'
-import StructureClass from 'common/constants/structures'
+import StructureClass from '../common/constants/structures'
 
 export default class TreeLeft extends TreeLeftAndRight {
 

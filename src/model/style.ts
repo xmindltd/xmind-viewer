@@ -1,5 +1,5 @@
 import Model, { ModelData } from './model'
-import { StyleKey } from 'common/constants/styles'
+import { StyleKey } from '../common/constants/styles'
 
 export interface StyleData extends ModelData {
   properties: any

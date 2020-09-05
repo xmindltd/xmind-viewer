@@ -1,12 +1,12 @@
-import TopicViewController from 'viewController/topicViewController'
-import Bounds from 'utils/bounds'
-import Area from 'utils/area'
-import Size from 'utils/size'
-import BranchViewController from 'viewController/branchViewController'
+import TopicViewController from '../../../viewController/topicViewController'
+import Bounds from '../../../utils/bounds'
+import Area from '../../../utils/area'
+import Size from '../../../utils/size'
+import BranchViewController from '../../../viewController/branchViewController'
 import { LineFocusType, offsetPointCalcFnMap, getStartDirection, getEndDirection, relativePosToRealPos, addPositionByDirection, getLineFocusType, getJointPosition, calcUnderline } from './topicShapeUtils'
-import { LINE_CONTROL_OFFSET } from 'common/constants/layoutSettings'
-import { TopicShapeType, BranchConnection } from 'common/constants/styles'
-import { Direction } from 'common/constants/models'
+import { LINE_CONTROL_OFFSET } from '../../../common/constants/layoutSettings'
+import { TopicShapeType, BranchConnection } from '../../../common/constants/styles'
+import { Direction } from '../../../common/constants/models'
 
 export default abstract class TopicShape {
 

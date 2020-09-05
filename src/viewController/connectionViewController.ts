@@ -1,9 +1,9 @@
 import ViewController from './viewController'
 import BranchViewController from './branchViewController'
-import ViewControllerType from 'common/constants/viewControllers'
-import ConnectionView, { ConnectionViewData } from 'view/connectionView'
-import { isRootBranch, isAttachedBranch, getMaskInfo } from 'utils/branchUtils'
-import { isMapStructure } from 'structure/helper/structureUtils'
+import ViewControllerType from '../common/constants/viewControllers'
+import ConnectionView, { ConnectionViewData } from '../view/connectionView'
+import { isRootBranch, isAttachedBranch, getMaskInfo } from '../utils/branchUtils'
+import { isMapStructure } from '../structure/helper/structureUtils'
 
 export default class ConnectionViewController extends ViewController {
 

@@ -1,10 +1,10 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import Bounds from 'utils/bounds'
-import { getPosition } from 'utils/position'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Bounds from '../../../utils/bounds'
+import { getPosition } from '../../../utils/position'
 import { flexCorner } from './brushesHelper'
-import BranchViewController from 'viewController/branchViewController'
-import Size from 'utils/size'
+import BranchViewController from '../../../viewController/branchViewController'
+import Size from '../../../utils/size'
 import { getFontSize } from './topicShapeUtils'
 
 export default class EllpticRectangleTopicShape extends TopicShape {

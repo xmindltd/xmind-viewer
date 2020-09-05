@@ -1,4 +1,4 @@
-import FontInfo from 'utils/fontInfo'
+import FontInfo from './fontInfo'
 
 interface FontNode {
   content?: string,

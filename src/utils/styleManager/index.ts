@@ -1,8 +1,7 @@
-import ViewController from 'viewController/viewController'
-import { StyleKey } from 'common/constants/styles'
-import View from 'view/view'
+import ViewController from '../../viewController/viewController'
+import { StyleKey } from '../../common/constants/styles'
 import { findStyleSelector } from './styleSelectorFactory'
-import FontInfo from 'utils/fontInfo'
+import FontInfo from '../fontInfo'
 
 export function getStyleValue(target: ViewController, key: StyleKey): string {
   const selector = _getStyleSelector(target)

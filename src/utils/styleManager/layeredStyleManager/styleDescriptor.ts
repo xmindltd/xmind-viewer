@@ -1,4 +1,3 @@
-import { StyleKey, TopicShapeType } from 'common/constants/styles'
 
 const fixedStyleDescriptor = {
 

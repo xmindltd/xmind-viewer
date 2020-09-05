@@ -1,10 +1,10 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import { PADDING } from 'common/constants/layoutSettings'
-import Size from 'utils/size'
-import StructureClass from 'common/constants/structures'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import { PADDING } from '../common/constants/layoutSettings'
+import Size from '../utils/size'
+import StructureClass from '../common/constants/structures'
 
 export default class TimelineHorizontalDown extends AbstractStructure {
   

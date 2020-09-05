@@ -9,6 +9,16 @@ XMind Viewer is an official project, made by XMind team, and written in TypeScri
 
 ## Usage and Getting Started
 
+### Usage in Node.js
+
+```shell
+$ npm i --save xmind-viewer
+```
+
+```js
+const { loadFromXMind, SnowbrushRenderer } = require('xmind-viewer')
+```
+
 ### Simple Usage
 
 ```ts

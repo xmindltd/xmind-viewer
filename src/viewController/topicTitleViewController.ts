@@ -1,7 +1,7 @@
-import TextViewController from 'viewController/textViewController'
-import TopicTitleView from 'view/topicTitleView'
-import ViewControllerType from 'common/constants/viewControllers'
-import * as StyleManager from 'utils/styleManager'
+import TextViewController from './textViewController'
+import TopicTitleView from '../view/topicTitleView'
+import ViewControllerType from '../common/constants/viewControllers'
+import * as StyleManager from '../utils/styleManager'
 import TopicViewController from './topicViewController'
 
 export default class TopicTitleViewController extends TextViewController {

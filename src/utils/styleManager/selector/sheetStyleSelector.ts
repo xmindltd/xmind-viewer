@@ -1,5 +1,5 @@
 import MindMapStyleSelector from './mindMapStyleSelector'
-import { ClassType } from 'common/constants/styles'
+import { ClassType } from '../../../common/constants/styles'
 
 export default class SheetStyleSelector extends MindMapStyleSelector {
 

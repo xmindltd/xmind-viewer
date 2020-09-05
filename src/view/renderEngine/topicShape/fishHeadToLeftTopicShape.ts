@@ -1,8 +1,8 @@
 import TopicShape from './topicShape'
-import Bounds from 'utils/bounds'
-import { TopicShapeType } from 'common/constants/styles'
-import Size from 'utils/size'
-import BranchViewController from 'viewController/branchViewController'
+import Bounds from '../../../utils/bounds'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Size from '../../../utils/size'
+import BranchViewController from '../../../viewController/branchViewController'
 import { getUnits } from './topicShapeUtils'
 
 export default class FishHeadToLeftTopicShape extends TopicShape {
