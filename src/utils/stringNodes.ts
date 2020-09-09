@@ -1,4 +1,5 @@
 import FontInfo from './fontInfo'
+import { createCanvas } from 'canvas'
 
 interface FontNode {
   content?: string,
@@ -49,7 +50,8 @@ function getTextSize(node: FontNode) {
   const fontFamily = node.style.fontFamily
   const fontArr = [fontStyle, fontWeight, fontSizePx, fontFamily]
 
-  const canvas = document.createElement('canvas')
+  // const canvas = document.createElement('canvas')
+  const canvas = createCanvas(200, 200)
   const ctx = canvas.getContext('2d')
   ctx.font = fontArr.filter(item => item).join(' ')
 

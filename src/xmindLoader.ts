@@ -54,7 +54,14 @@ function _fromXML(zip: JSZip) {
       return reject('Must have a manifest.xml file.')
     }
 
-    const domParser = new DOMParser()
+    let domParser
+    if (typeof((<any>global).window) === 'undefined') {
+      const jsdom = require("jsdom")
+      const DOMParser = new jsdom.JSDOM('').window.DOMParser
+      domParser = new DOMParser()
+    } else {
+      domParser = new DOMParser()
+    }
     manifestZipObj.async('text').then(xmlStr => {
       const dom = domParser.parseFromString(xmlStr, 'application/xml')
       return _parseManifestDOM(dom)
@@ -149,15 +156,14 @@ function _parseSheetDOM(sheetDOM: Document, sheets: SheetData[], options?: { sty
           topicData.id = topicDOM.getAttribute('id')
 
           // title
-          const titleDomArr = Array.from(topicDOM.childNodes).filter(item => item.nodeName?.toLowerCase() == 'title')
-          const titleNode: ChildNode = titleDomArr.length >0 && titleDomArr[0]
+          const titleDomArr = topicDOM.getElementsByTagName('title')
+          const titleNode = titleDomArr.length >0 && titleDomArr[0]
+          
           if (titleNode?.firstChild) {
             const value = titleNode.firstChild.nodeValue
             if (value) topicData.title = value.replace(/\r/g, '')
 
-            if (titleNode instanceof Element) {
-              topicData.customWidth = titleNode.getAttribute('svg:width')
-            }
+            topicData.customWidth = titleNode.getAttribute('svg:width')
           }
 
           // structureClass
@@ -193,7 +199,7 @@ function _parseSheetDOM(sheetDOM: Document, sheets: SheetData[], options?: { sty
 
                 extensionData.provider = extensionDOM.getAttribute('provider')
                 const contentContainer =  extensionDOM.getElementsByTagName('content') && extensionDOM.getElementsByTagName('content')[0]
-                const contentDomArray = Array.from(contentContainer.childNodes).filter(item => item instanceof Element)
+                const contentDomArray = Array.from(contentContainer.childNodes).filter(item => item.nodeType === item.ELEMENT_NODE)
                 const contentResult = []
                 contentDomArray.forEach((contentDom: Element) => {
                   contentResult.push({
@@ -221,7 +227,7 @@ function _parseSheetDOM(sheetDOM: Document, sheets: SheetData[], options?: { sty
             }
 
             let content: any
-            let extensionChildrenDOM = Array.from(extensionContentDOM.childNodes).filter(item => item instanceof Element)
+            let extensionChildrenDOM = Array.from(extensionContentDOM.childNodes).filter(item => item.nodeType === item.ELEMENT_NODE)
             if (extensionChildrenDOM && extensionChildrenDOM.length) {
               content = []
               extensionChildrenDOM.forEach((childDOM: Element) => {

@@ -26,6 +26,8 @@ export default class Theme extends Model {
   }
 
   private _init() {
+    if (!this._data) return
+
     for (let classType in ClassType) {
       const classTypeValue = ClassType[classType]
       const styleData = this._data[classTypeValue]
