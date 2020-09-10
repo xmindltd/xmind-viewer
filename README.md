@@ -1,3 +1,5 @@
+# **DEPRECATED** - Never ever use it in a production environment!
+
 # XMind Viewer 
 
 XMind Viewer, is a lightweight library to parse a `.xmind` file and render it in `SVG`.
