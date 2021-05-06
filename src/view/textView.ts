@@ -1,9 +1,9 @@
-import View from 'view/view'
+import View from './view'
 import { Tspan, G, Text } from '@svgdotjs/svg.js'
-import FontInfo from 'utils/fontInfo'
-import Size from 'utils/size'
-import Bounds from 'utils/bounds'
-import Position, { isSamePosition } from 'utils/position'
+import FontInfo from '../utils/fontInfo'
+import Size from '../utils/size'
+import Bounds from '../utils/bounds'
+import Position, { isSamePosition } from '../utils/position'
 import TitleLayoutWorker from './layoutEngine/titleLayoutWorker'
 
 const ALIGN_MAP = {

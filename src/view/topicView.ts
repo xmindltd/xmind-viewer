@@ -1,7 +1,7 @@
-import View from 'view/view'
-import ViewType from 'common/constants/views'
-import Position, { isSamePosition } from 'utils/position'
-import { getTopicShape } from 'view/renderEngine/topicShape'
+import View from './view'
+import ViewType from '../common/constants/views'
+import Position, { isSamePosition } from '../utils/position'
+import { getTopicShape } from './renderEngine/topicShape'
 import { G, Path } from '@svgdotjs/svg.js'
 
 export default class TopicView extends View {

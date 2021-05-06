@@ -1,10 +1,10 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import Bounds from 'utils/bounds'
-import Size from 'utils/size'
-import BranchViewController from 'viewController/branchViewController'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Bounds from '../../../utils/bounds'
+import Size from '../../../utils/size'
+import BranchViewController from '../../../viewController/branchViewController'
 import { getFontSize, getLineFocusType, LineFocusType, offsetPointCalcFnMap, getStartDirection, addPositionByDirection, getEndDirection, relativePosToRealPos, getJointPosition, END_OFFSET } from './topicShapeUtils'
-import { Direction } from 'common/constants/models'
+import { Direction } from '../../../common/constants/models'
 
 export default class ParallelogramTopicShape extends TopicShape {
 

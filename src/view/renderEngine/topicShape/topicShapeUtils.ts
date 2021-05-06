@@ -1,10 +1,10 @@
-import BranchViewController from 'viewController/branchViewController'
-import { Direction, TopicType } from 'common/constants/models'
-import Bounds from 'utils/bounds'
-import Position from 'utils/position'
-import StructureClass from 'common/constants/structures'
-import { isMapStructure } from 'structure/helper/structureUtils'
-import { TopicShapeType, BranchConnection } from 'common/constants/styles'
+import BranchViewController from '../../../viewController/branchViewController'
+import { Direction, TopicType } from '../../../common/constants/models'
+import Bounds from '../../../utils/bounds'
+import Position from '../../../utils/position'
+import StructureClass from '../../../common/constants/structures'
+import { isMapStructure } from '../../../structure/helper/structureUtils'
+import { TopicShapeType, BranchConnection } from '../../../common/constants/styles'
 
 enum LineFocusType {
   DIVER_LINE = 'diverLine', // Divergent Line
@@ -212,12 +212,12 @@ export function addPositionByDirection(pos: Position, dire: Direction, dx: numbe
 }
 
 export function getFontSize(branch: BranchViewController) {
-  return parseInt(branch.topicViewController.titleViewController.view.fontSize) || 0
+  return parseInt(branch.topicViewController.titleViewController.view.fontInfo.fontSize) || 0
 }
 
 export function getUnits(branch: BranchViewController) {
   return {
-    fontSize: Math.min(50, parseInt(branch.topicViewController.titleViewController.view.fontSize) || 0),
+    fontSize: Math.min(50, parseInt(branch.topicViewController.titleViewController.view.fontInfo.fontSize) || 0),
     lm: branch.topicViewController.view.marginLeft || 0,
     rm: branch.topicViewController.view.marginRight || 0,
     tm: branch.topicViewController.view.marginTop || 0,

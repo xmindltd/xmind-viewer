@@ -1,11 +1,7 @@
-import { BranchConnection } from 'common/constants/styles'
-import BranchViewController from 'viewController/branchViewController'
-import * as brushes from 'view/renderEngine/topicShape/brushes'
-import Position from 'utils/position'
-import StructureClass from 'common/constants/structures'
-import { isFishboneStructure, isFishHeadStructure, getFishboneStructureHorizontalDire } from 'structure/helper/structureUtils'
-import { ROTATED_COS, ROTATED_SIN, COLLAPSE_GAP } from 'common/constants/layoutSettings'
-import { Direction } from 'common/constants/models'
+import { BranchConnection } from '../../common/constants/styles'
+import BranchViewController from '../../viewController/branchViewController'
+import * as brushes from '../renderEngine/topicShape/brushes'
+import Position from '../../utils/position'
 
 export type LinePositions = {
   start: Position,

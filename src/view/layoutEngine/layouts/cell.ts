@@ -1,8 +1,8 @@
-import Position from 'utils/position'
-import Size from 'utils/size'
-import Layout from 'view/layoutEngine/layouts/layout'
-import GridData from 'view/layoutEngine/layouts/gridData'
-import { isSameSize } from 'utils/bounds'
+import Position from '../../../utils/position'
+import Size from '../../../utils/size'
+import Layout from '../../layoutEngine/layouts/layout'
+import GridData from '../../layoutEngine/layouts/gridData'
+import { isSameSize } from '../../../utils/bounds'
 
 class Cell {
 

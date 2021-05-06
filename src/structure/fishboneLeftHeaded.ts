@@ -1,12 +1,12 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import StructureClass from 'common/constants/structures'
-import { TopicType, Direction } from 'common/constants/models'
-import { PADDING, ROTATED_COS, ROTATED_SIN } from 'common/constants/layoutSettings'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import StructureClass from '../common/constants/structures'
+import { TopicType, Direction } from '../common/constants/models'
+import { PADDING, ROTATED_COS, ROTATED_SIN } from '../common/constants/layoutSettings'
 import { getUpSideBranches, isUpSideBranch } from './helper/structureUtils'
-import { BranchConnection } from 'common/constants/styles'
-import { getConnectionInfo } from 'view/lineRender/topicLineStyle'
+import { BranchConnection } from '../common/constants/styles'
+import { getConnectionInfo } from '../view/lineRender/topicLineStyle'
 
 export default class FishboneLeftHeaded extends AbstractStructure {
 

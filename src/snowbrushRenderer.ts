@@ -1,7 +1,7 @@
-import { SheetData } from 'model/sheet'
-import SheetViewController from 'viewController/sheetViewController'
+import { SheetData } from './model/sheet'
+import SheetViewController from './viewController/sheetViewController'
 import { Svg } from '@svgdotjs/svg.js'
-import { Workbook } from 'model/workbook'
+import { Workbook } from './model/workbook'
 
 export interface RenderOptions {
   sheetIndex?: number

@@ -1,6 +1,6 @@
-import ViewControllerType from 'common/constants/viewControllers'
-import View from 'view/view'
-import Model from 'model/model'
+import ViewControllerType from '../common/constants/viewControllers'
+import View from '../view/view'
+import Model from '../model/model'
 
 export default abstract class ViewController {
 

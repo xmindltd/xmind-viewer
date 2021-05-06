@@ -1,12 +1,11 @@
 import contentData from './content.json'
 import JSZip from 'jszip'
-import { SheetData } from 'model/sheet'
 import { loadFromXMind, SnowbrushRenderer } from '../src/index'
 
 load(contentData)
 
 document.getElementById('input-dialog').addEventListener('input', function() {
-  const inputEle = this as HTMLInputElement
+  const inputEle = this
   if (inputEle.files.length === 0) { 
     return 
   }
@@ -19,7 +18,7 @@ document.getElementById('input-dialog').addEventListener('input', function() {
     return Promise.all([
       Promise.resolve(fileName),
       jszip.loadAsync(e.target.result).then(zip => {
-        loadFromXMind(zip).then((result: any) => {
+        loadFromXMind(zip).then(result => {
           load(result.sheets)
         })
       })
@@ -34,7 +33,7 @@ document.getElementById('open-file').addEventListener('click', function(){
   input.click()
 })
 
-function load(data: SheetData[]) {
+function load(data) {
   const container = document.getElementById('page-content')
   if (container.children.length > 0) {
     container.innerHTML = ''

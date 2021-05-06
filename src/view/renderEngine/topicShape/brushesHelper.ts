@@ -1,4 +1,4 @@
-import Position, { addPosition, diffPosition, normalizeVector } from 'utils/position'
+import Position, { addPosition, diffPosition, normalizeVector } from '../../../utils/position'
 
 export function flexCorner(start: Position, flex: Position, end: Position, corner: number) {
   let v1 = diffPosition(flex, start)

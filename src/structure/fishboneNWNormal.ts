@@ -1,11 +1,11 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds, { merge } from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import StructureClass from 'common/constants/structures'
-import { COLLAPSE_GAP, PADDING, ROTATED_TAN } from 'common/constants/layoutSettings'
-import { getConnectionInfo } from 'view/lineRender/topicLineStyle'
-import { BranchConnection } from 'common/constants/styles'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds, { merge } from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import StructureClass from '../common/constants/structures'
+import { COLLAPSE_GAP, PADDING, ROTATED_TAN } from '../common/constants/layoutSettings'
+import { getConnectionInfo } from '../view/lineRender/topicLineStyle'
+import { BranchConnection } from '../common/constants/styles'
 
 export default class FishboneNWNormal extends AbstractStructure {
 

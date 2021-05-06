@@ -1,6 +1,6 @@
-import MapClockWise from 'structure/mapClockWise'
-import BranchViewController from 'viewController/branchViewController'
-import Topic from 'model/topic'
+import MapClockWise from './mapClockWise'
+import BranchViewController from '../viewController/branchViewController'
+import Topic from '../model/topic'
 
 export default class MapUnbalanced extends MapClockWise {
 

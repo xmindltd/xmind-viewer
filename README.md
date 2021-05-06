@@ -1,3 +1,5 @@
+# **DEPRECATED** - Never ever use it in a production environment!
+
 # XMind Viewer 
 
 XMind Viewer, is a lightweight library to parse a `.xmind` file and render it in `SVG`.
@@ -23,6 +25,16 @@ parcel example\index.html
 ```
 
 ## Usage and Getting Started
+
+### Usage in Node.js
+
+```shell
+$ npm i --save xmind-viewer
+```
+
+```js
+const { loadFromXMind, SnowbrushRenderer } = require('xmind-viewer')
+```
 
 ### Simple Usage
 

@@ -1,12 +1,12 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds, { merge } from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import { PADDING } from 'common/constants/layoutSettings'
-import StructureClass from 'common/constants/structures'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds, { merge } from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import { PADDING } from '../common/constants/layoutSettings'
+import StructureClass from '../common/constants/structures'
 import { isUpSideBranch } from './helper/structureUtils'
-import { getConnectionInfo, ConnectionInfo } from 'view/lineRender/topicLineStyle'
-import { BranchConnection } from 'common/constants/styles'
+import { getConnectionInfo, ConnectionInfo } from '../view/lineRender/topicLineStyle'
+import { BranchConnection } from '../common/constants/styles'
 
 export default class TimelineHorizontal extends AbstractStructure {
 

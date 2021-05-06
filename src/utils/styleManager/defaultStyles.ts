@@ -1,4 +1,4 @@
-import { StyleKey, ClassType } from 'common/constants/styles'
+import { StyleKey, ClassType } from '../../common/constants/styles'
 
 const defaultStyles = {
   [ClassType.CENTRAL_TOPIC]: {

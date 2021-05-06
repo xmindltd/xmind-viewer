@@ -1,11 +1,11 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import Bounds from 'utils/bounds'
-import BranchViewController from 'viewController/branchViewController'
-import Size from 'utils/size'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Bounds from '../../../utils/bounds'
+import BranchViewController from '../../../viewController/branchViewController'
+import Size from '../../../utils/size'
 import { getFontSize, getStartDirection, getEndDirection, getJointPosition, relativePosToRealPos } from './topicShapeUtils'
-import Position from 'utils/position'
-import { Direction } from 'common/constants/models'
+import Position from '../../../utils/position'
+import { Direction } from '../../../common/constants/models'
 
 export default class DiamondTopicShape extends TopicShape {
 

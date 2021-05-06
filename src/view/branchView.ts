@@ -1,9 +1,9 @@
 import View from './view'
-import ViewType from 'common/constants/views'
+import ViewType from '../common/constants/views'
 import { G } from '@svgdotjs/svg.js'
-import Position from 'utils/position'
-import { Direction } from 'common/constants/models'
-import Bounds from 'utils/bounds'
+import Position from '../utils/position'
+import { Direction } from '../common/constants/models'
+import Bounds from '../utils/bounds'
 
 export interface BranchViewData {
   position: Position

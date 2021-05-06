@@ -1,8 +1,8 @@
-import BaseMap from 'structure/baseMap'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import { TopicType, Direction } from 'common/constants/models'
-import StructureClass from 'common/constants/structures'
+import BaseMap from './baseMap'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import { TopicType, Direction } from '../common/constants/models'
+import StructureClass from '../common/constants/structures'
 
 export default class MapClockWise extends BaseMap {
 

@@ -1,9 +1,9 @@
 import TopicShape from './topicShape'
-import Bounds from 'utils/bounds'
-import BranchViewController from 'viewController/branchViewController'
+import Bounds from '../../../utils/bounds'
+import BranchViewController from '../../../viewController/branchViewController'
 import { LineFocusType, offsetPointCalcFnMap, getLineFocusType, calcUnderline } from './topicShapeUtils'
-import { TopicShapeType } from 'common/constants/styles'
-import Size from 'utils/size'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Size from '../../../utils/size'
 
 export default class UnderlineTopicShape extends TopicShape {
 

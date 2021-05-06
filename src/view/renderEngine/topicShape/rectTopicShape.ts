@@ -1,7 +1,7 @@
-import Bounds from 'utils/bounds'
+import Bounds from '../../../utils/bounds'
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import { rect } from 'view/renderEngine/topicShape/brushes'
+import { TopicShapeType } from '../../../common/constants/styles'
+import { rect } from '../../../view/renderEngine/topicShape/brushes'
 
 export default class RectTopicShape extends TopicShape {
 

@@ -1,11 +1,11 @@
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import BaseMap from 'structure/baseMap'
-import { TopicType, Direction } from 'common/constants/models'
-import StructureClass from 'common/constants/structures'
-import LeftAndRight from 'structure/leftAndRight'
-import TreeLeftAndRight from 'structure/treeLeftAndRight'
-import OrgChart from 'structure/orgChart'
+import BranchViewController from '../../viewController/branchViewController'
+import Bounds from '../../utils/bounds'
+import BaseMap from '../baseMap'
+import { TopicType, Direction } from '../../common/constants/models'
+import StructureClass from '../../common/constants/structures'
+import LeftAndRight from '../leftAndRight'
+import TreeLeftAndRight from '../treeLeftAndRight'
+import OrgChart from '../orgChart'
 
 export function isMapStructure(branch: BranchViewController) {
   return branch?.getStructureObject() instanceof BaseMap

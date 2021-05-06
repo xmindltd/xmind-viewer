@@ -1,10 +1,10 @@
-import ViewController from 'viewController/viewController'
-import { StyleKey, StyleLayer } from 'common/constants/styles'
-import Theme from 'model/theme'
-import Model from 'model/model'
-import defaultStyles from 'utils/styleManager/defaultStyles'
-import FontInfo from 'utils/fontInfo'
-import * as LayeredStyleManager from 'utils/styleManager/layeredStyleManager/layeredStyleManager'
+import ViewController from '../../../viewController/viewController'
+import { StyleKey, StyleLayer } from '../../../common/constants/styles'
+import Theme from '../../../model/theme'
+import Model from '../../../model/model'
+import defaultStyles from '../defaultStyles'
+import FontInfo from '../../fontInfo'
+import * as LayeredStyleManager from '../layeredStyleManager/layeredStyleManager'
 
 const SPECIAL_HANDLE_KEYS = [StyleKey.FONT_FAMILY]
 

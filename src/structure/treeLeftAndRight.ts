@@ -1,9 +1,9 @@
 import AbstractStructure from './abstractStructure'
-import Bounds from 'utils/bounds'
-import Size from 'utils/size'
-import BranchViewController from 'viewController/branchViewController'
-import { BOUNDARY_GAP, PADDING } from 'common/constants/layoutSettings'
-import { TopicType } from 'common/constants/models'
+import Bounds from '../utils/bounds'
+import Size from '../utils/size'
+import BranchViewController from '../viewController/branchViewController'
+import { BOUNDARY_GAP, PADDING } from '../common/constants/layoutSettings'
+import { TopicType } from '../common/constants/models'
 
 export default abstract class TreeLeftAndRight extends AbstractStructure {
 
