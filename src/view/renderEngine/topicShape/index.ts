@@ -1,6 +1,6 @@
-import { TopicShapeType } from 'common/constants/styles'
+import { TopicShapeType } from '../../../common/constants/styles'
 import TopicShape from './topicShape'
-import RoundedRectTopicShape from 'view/renderEngine/topicShape/roundedRectTopicShape'
+import RoundedRectTopicShape from '../../../view/renderEngine/topicShape/roundedRectTopicShape'
 import UnderlineTopicShape from './underlineTopicShape'
 import RectTopicShape from './rectTopicShape'
 import EllipseTopicShape from './ellipseTopicShape'

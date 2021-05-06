@@ -1,5 +1,5 @@
-import View from 'view/view'
-import ViewType from 'common/constants/views'
+import View from './view'
+import ViewType from '../common/constants/views'
 import { Path, SVG } from '@svgdotjs/svg.js'
 import SheetView from './sheetView'
 

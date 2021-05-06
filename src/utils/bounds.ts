@@ -1,5 +1,5 @@
-import Size from 'utils/size'
-import Position from 'utils/position'
+import Size from './size'
+import Position from './position'
 
 interface Bounds {
   x: number

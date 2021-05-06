@@ -133,7 +133,6 @@ document.getElementById('input-dialog').addEventListener('input', function() {
 
   const file = inputEle.files[0]
   const fileName = inputEle.value
-  // debugger
   const reader = new FileReader()
   reader.onload = e => {
     const jszip = new JSZip()

@@ -1,13 +1,13 @@
-import { StyleKey } from 'common/constants/styles'
-import ViewControllerType from 'common/constants/viewControllers'
-import Topic from 'model/topic'
-import * as StyleManager from 'utils/styleManager'
-import TopicView from 'view/topicView'
-import ViewController from 'viewController/viewController'
-import TopicTitleViewController from 'viewController/topicTitleViewController'
-import Bounds from 'utils/bounds'
+import { StyleKey } from '../common/constants/styles'
+import ViewControllerType from '../common/constants/viewControllers'
+import Topic from '../model/topic'
+import * as StyleManager from '../utils/styleManager'
+import TopicView from '../view/topicView'
+import ViewController from './viewController'
+import TopicTitleViewController from './topicTitleViewController'
+import Bounds from '../utils/bounds'
 import BranchViewController from './branchViewController'
-import TopicLayoutWorker from 'view/layoutEngine/topicLayoutWorker'
+import TopicLayoutWorker from '../view/layoutEngine/topicLayoutWorker'
 
 export default class TopicViewController extends ViewController {
 
@@ -22,7 +22,7 @@ export default class TopicViewController extends ViewController {
     super(parent)
 
     this._topic = topic
-    this._view = new TopicView(this)
+    this._view = new TopicView()
 
     this._initStyle()
 
@@ -58,7 +58,7 @@ export default class TopicViewController extends ViewController {
   }
 
   protected createView(): TopicView {
-    return new TopicView(this)
+    return new TopicView()
   }
 
   get model() {

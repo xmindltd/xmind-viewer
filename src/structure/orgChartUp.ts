@@ -1,5 +1,5 @@
 import OrgChart from './orgChart'
-import StructureClass from 'common/constants/structures'
+import StructureClass from '../common/constants/structures'
 
 export default class OrgChartUp extends OrgChart {
 

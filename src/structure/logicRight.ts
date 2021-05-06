@@ -1,7 +1,7 @@
 import LeftAndRight from './leftAndRight'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import StructureClass from 'common/constants/structures'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import StructureClass from '../common/constants/structures'
 
 export default class LogicRight extends LeftAndRight {
 

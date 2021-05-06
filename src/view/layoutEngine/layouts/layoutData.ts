@@ -1,4 +1,4 @@
-import Cell from 'view/layoutEngine/layouts/cell'
+import Cell from '../../layoutEngine/layouts/cell'
 
 export default abstract class LayoutData {
 

@@ -1,4 +1,4 @@
-import BranchViewControler from 'viewController/branchViewController'
+import BranchViewControler from '../viewController/branchViewController'
 
 export default function branchLayout(branch: BranchViewControler) {
   if (!branch) return

@@ -1,7 +1,6 @@
-import Cell from 'view/layoutEngine/layouts/cell'
-import Size from 'utils/size'
-import Bounds from 'utils/bounds'
-import LayoutData from 'view/layoutEngine/layouts/layoutData'
+import Cell from '../../layoutEngine/layouts/cell'
+import Size from '../../../utils/size'
+import Bounds from '../../../utils/bounds'
 
 export default abstract class Layout {
 

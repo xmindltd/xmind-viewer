@@ -1,11 +1,11 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds, { merge } from 'utils/bounds'
-import StructureClass from 'common/constants/structures'
-import { TopicType } from 'common/constants/models'
-import { COLLAPSE_GAP, PADDING, ROTATED_TAN } from 'common/constants/layoutSettings'
-import { BranchConnection } from 'common/constants/styles'
-import { getConnectionInfo } from 'view/lineRender/topicLineStyle'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds, { merge } from '../utils/bounds'
+import StructureClass from '../common/constants/structures'
+import { TopicType } from '../common/constants/models'
+import { COLLAPSE_GAP, PADDING, ROTATED_TAN } from '../common/constants/layoutSettings'
+import { BranchConnection } from '../common/constants/styles'
+import { getConnectionInfo } from '../view/lineRender/topicLineStyle'
 
 export default class FishboneNENormal extends AbstractStructure {
 

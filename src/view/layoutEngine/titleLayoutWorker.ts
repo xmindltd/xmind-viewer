@@ -1,8 +1,8 @@
-import TextView from 'view/textView'
-import { str2NodesArr, getNodesSize } from 'utils/stringNodes'
-import FontInfo from 'utils/fontInfo'
+import TextView from '../textView'
+import { str2NodesArr, getNodesSize } from '../../utils/stringNodes'
+import FontInfo from '../../utils/fontInfo'
 import { Text } from '@svgdotjs/svg.js'
-import { TextTransform } from 'common/constants/styles'
+import { TextTransform } from '../../common/constants/styles'
 
 const ATTR_MAP = {
   'fontFamily': 'font-family',

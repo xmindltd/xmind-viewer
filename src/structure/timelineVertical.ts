@@ -1,9 +1,9 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import StructureClass from 'common/constants/structures'
-import Bounds, { merge } from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import { PADDING } from 'common/constants/layoutSettings'
+import BranchViewController from '../viewController/branchViewController'
+import StructureClass from '../common/constants/structures'
+import Bounds, { merge } from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import { PADDING } from '../common/constants/layoutSettings'
 
 export default class TimelineVertical extends AbstractStructure {
 

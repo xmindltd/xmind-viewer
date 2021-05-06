@@ -1,9 +1,9 @@
 import AbstractStructure from './abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import { TopicType } from 'common/constants/models'
-import Size from 'utils/size'
-import { BranchConnection } from 'common/constants/styles'
+import BranchViewController from '../viewController/branchViewController'
+import Bounds from '../utils/bounds'
+import { TopicType } from '../common/constants/models'
+import Size from '../utils/size'
+import { BranchConnection } from '../common/constants/styles'
 
 export default abstract class LeftAndRight extends AbstractStructure {
 

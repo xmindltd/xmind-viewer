@@ -1,10 +1,10 @@
 import ViewController from './viewController'
 import BranchViewController from './branchViewController'
-import Sheet from 'model/sheet'
-import ViewControllerType from 'common/constants/viewControllers'
-import SheetView from 'view/sheetView'
-import { getStyleValue } from 'utils/styleManager'
-import { StyleKey } from 'common/constants/styles'
+import Sheet from '../model/sheet'
+import ViewControllerType from '../common/constants/viewControllers'
+import SheetView from '../view/sheetView'
+import { getStyleValue } from '../utils/styleManager'
+import { StyleKey } from '../common/constants/styles'
 
 export default class SheetViewController extends ViewController {
 

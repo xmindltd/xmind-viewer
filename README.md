@@ -1,3 +1,5 @@
+# ~~**DEPRECATED** - Never ever use it in a production environment!~~
+
 # XMind Viewer 
 
 XMind Viewer, is a lightweight library to parse a `.xmind` file and render it in `SVG`.
@@ -26,7 +28,29 @@ parcel --port 8989 --log-level 4 --target browser example\index.html
 # - --public-url .: 资源引用，使用相对路径
 ```
 
+### load xmind from url
+```bash
+# eg: http://localhost:8989/?file=http://127.0.0.1:8001/hello.xmind
+
+# xmind file serving
+# install http static server
+npm install http-server -g
+# run in folder(where hello.xmind is)
+http-server -p 8001 --cors
+# refer: https://stackoverflow.com/questions/21956683/enable-access-control-on-simple-http-server/28632834#28632834
+```
+
 ## Usage and Getting Started
+
+### Usage in Node.js
+
+```shell
+$ npm i --save xmind-viewer
+```
+
+```js
+const { loadFromXMind, SnowbrushRenderer } = require('xmind-viewer')
+```
 
 ### Simple Usage
 

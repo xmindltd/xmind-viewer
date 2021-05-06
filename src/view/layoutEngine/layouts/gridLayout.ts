@@ -1,8 +1,8 @@
-import Layout from 'view/layoutEngine/layouts/layout'
-import Cell from 'view/layoutEngine/layouts/cell'
-import GridData from 'view/layoutEngine/layouts/gridData'
-import Bounds from 'utils/bounds'
-import Size from 'utils/size'
+import Layout from '../../layoutEngine/layouts/layout'
+import Cell from '../../layoutEngine/layouts/cell'
+import GridData from '../../layoutEngine/layouts/gridData'
+import Bounds from '../../../utils/bounds'
+import Size from '../../../utils/size'
 
 function isNumber(number) {
   return typeof number === 'number'

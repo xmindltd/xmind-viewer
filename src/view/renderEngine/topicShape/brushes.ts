@@ -1,6 +1,6 @@
-import { LinePositions } from 'view/lineRender/topicLineStyle'
-import Bounds from 'utils/bounds'
-import Position, { diffPosition, normalizeVector, addPosition } from 'utils/position'
+import { LinePositions } from '../../../view/lineRender/topicLineStyle'
+import Bounds from '../../../utils/bounds'
+import Position, { diffPosition, normalizeVector, addPosition } from '../../../utils/position'
 
 const SKEW_ELBOW_RATIO = 2 / 3
 const HORN_RATIO = 1 / 2

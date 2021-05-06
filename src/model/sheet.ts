@@ -1,7 +1,7 @@
 import Topic, { TopicData, parseTopic } from './topic'
 import Model, { ModelData } from './model'
 import Theme, { ThemeData } from './theme'
-import { StyleKey } from 'common/constants/styles'
+import { StyleKey } from '../common/constants/styles'
 import { StyleData } from './style'
 
 export interface SheetData extends ModelData {

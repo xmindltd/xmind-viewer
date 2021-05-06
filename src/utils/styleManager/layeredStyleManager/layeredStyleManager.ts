@@ -1,9 +1,9 @@
-import { StyleLayer, StyleKey, TopicShapeType, BranchConnection } from 'common/constants/styles'
-import ViewController from 'viewController/viewController'
-import StructureClass, { FISHBONE_NORMAL_STRUCTURES } from 'common/constants/structures'
-import BranchViewController from 'viewController/branchViewController'
-import { isRootBranch } from 'utils/branchUtils'
-import { isLogicStructure, isTreeStructure, isOrgChartStructure } from 'structure/helper/structureUtils'
+import { StyleLayer, StyleKey, TopicShapeType, BranchConnection } from '../../../common/constants/styles'
+import ViewController from '../../../viewController/viewController'
+import StructureClass, { FISHBONE_NORMAL_STRUCTURES } from '../../../common/constants/structures'
+import BranchViewController from '../../../viewController/branchViewController'
+import { isRootBranch } from '../../branchUtils'
+import { isLogicStructure, isTreeStructure, isOrgChartStructure } from '../../../structure/helper/structureUtils'
 
 type TestFunction = (target: ViewController) => boolean
 

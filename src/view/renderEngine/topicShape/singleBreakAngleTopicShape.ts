@@ -1,6 +1,6 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import Bounds from 'utils/bounds'
+import { TopicShapeType } from '../../../common/constants/styles'
+import Bounds from '../../../utils/bounds'
 
 export default class SingleBreakAngleTopicShape extends TopicShape {
 

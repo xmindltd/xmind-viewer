@@ -1,11 +1,11 @@
-import AbstractStructure from 'structure/abstractStructure'
-import BranchViewController from 'viewController/branchViewController'
-import { TopicType, Direction } from 'common/constants/models'
-import { EXPOSED_ATTACHED_RIGHT_STRUCTURES, EXPOSED_ATTACHED_LEFT_STRUCTURES } from 'common/constants/structures'
-import Bounds from 'utils/bounds'
+import AbstractStructure from './abstractStructure'
+import BranchViewController from '../viewController/branchViewController'
+import { TopicType, Direction } from '../common/constants/models'
+import { EXPOSED_ATTACHED_RIGHT_STRUCTURES, EXPOSED_ATTACHED_LEFT_STRUCTURES } from '../common/constants/structures'
+import Bounds from '../utils/bounds'
 import { mergeBounds } from './helper/structureUtils'
-import { getBranchIndex, getParentBranch } from 'utils/branchUtils'
-import { PADDING } from 'common/constants/layoutSettings'
+import { getBranchIndex, getParentBranch } from '../utils/branchUtils'
+import { PADDING } from '../common/constants/layoutSettings'
 
 const MIN_TOP_BOTTOM_SPACING = 80
 const MAX_TOP_BOTTOM_SPACING = 180

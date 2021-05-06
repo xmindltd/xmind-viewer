@@ -1,5 +1,5 @@
 import Sheet from './sheet'
-import { StyleKey } from 'common/constants/styles'
+import { StyleKey } from '../common/constants/styles'
 
 export interface ModelData {
   id: string

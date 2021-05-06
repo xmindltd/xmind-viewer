@@ -1,8 +1,8 @@
-import BranchViewController from 'viewController/branchViewController'
-import { TopicType } from 'common/constants/models'
-import StructureClass from 'common/constants/structures'
-import ViewControllerType from 'common/constants/viewControllers'
-import { MaskInfo, MASK_OUTERD } from 'view/connectionView'
+import BranchViewController from '../viewController/branchViewController'
+import { TopicType } from '../common/constants/models'
+import StructureClass from '../common/constants/structures'
+import ViewControllerType from '../common/constants/viewControllers'
+import { MaskInfo, MASK_OUTERD } from '../view/connectionView'
 
 export function isAttachedBranch(branch: BranchViewController) {
   return branch?.model?.type === TopicType.ATTACHED

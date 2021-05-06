@@ -1,8 +1,8 @@
 import TopicShape from './topicShape'
-import { TopicShapeType } from 'common/constants/styles'
-import BranchViewController from 'viewController/branchViewController'
-import Bounds from 'utils/bounds'
-import Size from 'utils/size'
+import { TopicShapeType } from '../../../common/constants/styles'
+import BranchViewController from '../../../viewController/branchViewController'
+import Bounds from '../../../utils/bounds'
+import Size from '../../../utils/size'
 
 export default class EllipseRectTopicShape extends TopicShape {
 

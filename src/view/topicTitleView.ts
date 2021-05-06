@@ -1,5 +1,5 @@
-import TextView from 'view/textView'
-import ViewType from 'common/constants/views'
+import TextView from './textView'
+import ViewType from '../common/constants/views'
 
 export default class TopicTitleView extends TextView {
 
