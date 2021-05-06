@@ -1,4 +1,4 @@
-# **DEPRECATED** - Never ever use it in a production environment!
+# ~~**DEPRECATED** - Never ever use it in a production environment!~~
 
 # XMind Viewer 
 
@@ -8,6 +8,37 @@ It's very useful for showing a mind map on any web pages. Like a blog post, a bo
 
 XMind Viewer is an official project, made by XMind team, and written in TypeScript.
 
+## Quick Start
+
+```bash
+git clone https://github.com/xmindltd/xmind-viewer.git
+cd xmind-viewer
+# install project dependencies
+npm install --registry=https://registry.npm.taobao.org
+# install parcel
+npm install --save-dev cssnano @babel/preset-env @babel/core --registry=https://registry.npm.taobao.org
+npm install -g parcel --registry=https://registry.npm.taobao.org
+npm install core-js@3 @babel/polyfill @babel/plugin-transform-classes --save --registry=https://registry.npm.taobao.org
+# run
+parcel --port 8989 --log-level 4 --target browser example\index.html
+# build
+# parcel build example\index.html
+# parcel build --log-level 4 --target browser --public-url . example\index.html
+# 参数解释
+# - --public-url .: 资源引用，使用相对路径
+```
+
+### load xmind from url
+```bash
+# eg: http://localhost:8989/?file=http://127.0.0.1:8001/hello.xmind
+
+# xmind file serving
+# install http static server
+npm install http-server -g
+# run in folder(where hello.xmind is)
+http-server -p 8001 --cors
+# refer: https://stackoverflow.com/questions/21956683/enable-access-control-on-simple-http-server/28632834#28632834
+```
 
 ## Usage and Getting Started
 

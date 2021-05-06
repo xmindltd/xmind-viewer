@@ -14,14 +14,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^3.7.3"
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "cssnano": "^4.1.11",
+    "typescript": "^3.9.9"
   },
   "dependencies": {
+    "@babel/plugin-transform-classes": "^7.13.0",
+    "@babel/polyfill": "^7.12.1",
     "@svgdotjs/svg.js": "^3.0.16",
     "@types/jszip": "^3.1.6",
     "canvas": "^2.6.1",
+    "core-js": "^3.11.3",
     "jsdom": "^16.4.0",
-    "jszip": "^3.2.2",
+    "jszip": "^3.6.0",
     "svgdom": "^0.1.8"
   },
   "files": [
