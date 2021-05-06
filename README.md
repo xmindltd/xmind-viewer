@@ -14,12 +14,16 @@ cd xmind-viewer
 # install project dependencies
 npm install --registry=https://registry.npm.taobao.org
 # install parcel
-npm install -g parcel  --registry=https://registry.npm.taobao.org
+npm install --save-dev cssnano @babel/preset-env @babel/core --registry=https://registry.npm.taobao.org
+npm install -g parcel --registry=https://registry.npm.taobao.org
+npm install core-js@3 @babel/polyfill @babel/plugin-transform-classes --save --registry=https://registry.npm.taobao.org
 # run
-parcel example\index.html
+parcel --port 8989 --log-level 4 --target browser example\index.html
 # build
-# npm install  cssnano  --registry=https://registry.npm.taobao.org
 # parcel build example\index.html
+# parcel build --log-level 4 --target browser --public-url . example\index.html
+# 参数解释
+# - --public-url .: 资源引用，使用相对路径
 ```
 
 ## Usage and Getting Started

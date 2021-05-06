@@ -1,0 +1,21 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "chrome": "53",
+                    "ie": "11"
+                },
+                "useBuiltIns": "entry",
+                "corejs": 3
+            }
+        ]
+    ],
+    "ignore": [
+        "dist/**"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-classes"
+    ]
+}
